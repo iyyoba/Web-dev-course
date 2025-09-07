@@ -10,7 +10,9 @@ const TourList = (props) => {
                 <div className="underline"></div>
             </div>
             <div>
-                {/*Write the missing code here  */}
+                {tours.map((tour) => {
+                    return <Tour key={tour.id} tour={tour} />
+                })}
             </div>
         </section>
     );
